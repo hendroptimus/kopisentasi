@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Sentasi - Event Kreatif Belitung</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+                      
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511920170033-f8396924c348');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px 100px;
+            position: relative;
+        }
+        
+        .logo-header {
+            text-align: center;
+            padding: 20px 0;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            height: 100px;
+            width: auto;
+            max-width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+            
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #8B5A2B;
+            color: white;
+            padding: 10px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #6B3E1F;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #8B5A2B;
+        }
+        
+        .about-event {
+            background-color: #f9f9f9;
+        }
+        
+        .event-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        
+        .detail-card {
+            flex: 1;
+            min-width: 250px;
+            margin: 15px;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .detail-card i {
+            font-size: 2.5rem;
+            color: #8B5A2B;
+            margin-bottom: 15px;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        
+        .timeline-item {
+            padding: 20px 0;
+            position: relative;
+        }
+        
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #8B5A2B;
+        }
+        
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        
+        .timeline-content {
+            margin-left: 80px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-time {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            background: #8B5A2B;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        textarea {
+            height: 100px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .event-details {
+                flex-direction: column;
+            }
+            
+            .detail-card {
+                margin: 10px 0;
+            }
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 12px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+        }
+        
+        .whatsapp-btn i {
+            margin-right: 10px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="logo-header">
+        <!-- Ganti src dengan URL gambar logo Anda -->
+        <img src="logo.png" Logo Kopi Sentasi" class="logo">
+    </div>
+    <header>
+        <div class="container">
+            <h1>KOPI SENTASI</h1>
+            <h2>Event Kreatif untuk Siswa SMP Belitung</h2>
+            <h2>Mengolah Kopi Lokal  dalam - BELITUNG COFFEE POWDER CREATION CHALLENGE</h2>
+            <h2>&</h2>
+            <h2>Mempresentasikan Pariwisata Belitung dalam - XPLORE BELITUNG VISUALIZE & VOICE THE BEAUTY</h2>
+            <a href="#daftar" class="btn">Daftar Sekarang</a>
+        </div>
+    </header>
+       
+    <section class="about-event">
+        <div class="container">
+            <h2 class="section-title">Tentang Event</h2>
+            <p>Kopi Sentasi adalah event kreatif yang dirancang khusus untuk siswa/siswi SMP kelas 8 atau 9 di Belitung. Acara ini terdiri dari dua kegiatan utama: Membuat olahan cake berbahan dasar kopi lokal Belitung dan Membuat presentasi tentang pariwisata Belitung.</p>
+            <p>Event ini bertujuan untuk mengembangkan kreativitas, keterampilan baking, dan kemampuan public speaking peserta sekaligus memperkenalkan kekayaan kopi lokal, dan menyajikan presnetasi potensi pariwisata Belitung.</p>
+            
+            
+            <h2 class="section-title">Jadwal Technikal Meeting</h2>
+            <div class="event-details">
+                <div class="detail-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Tanggal</h3>
+                    <p>25 Mei 2025</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Waktu</h3>
+                    <p>09.00 - Selesai</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Peserta</h3>
+                    <p>Seluruh calon Peserta Lomba</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Jadwal Lomba</h2>
+            <div class="event-details">
+                <div class="detail-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Tanggal</h3>
+                    <p>22 Mei 2025</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Waktu</h3>
+                    <p>08.00 - Selesai</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Peserta</h3>
+                    <p>Siswa/Siswi SMP Kelas 8 atau 9</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="agenda">
+        <div class="container">
+            <h2 class="section-title">Agenda Kegiatan</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-time">07.30 - 08.00</span>
+                    <div class="timeline-content">
+                        <h3>Registrasi Peserta</h3>
+                        <p>Pendaftaran ulang dan pembagian kelompok</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-time">08.00 - 08.30</span>
+                    <div class="timeline-content">
+                        <h3>Pembukaan</h3>
+                        <p>Sambutan dari panitia dan pengarahan kegiatan</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-time">08.30 - 09.00</span>
+                    <div class="timeline-content">
+                        <h3>Persiapan Lomba</h3>
+                        <p>Peserta lomba diarahkan ke tempat masing-masing untuk melakukan persiapan alat dan bahan. Panitia membantu memastikan seluruh kebutuhan peserta sudah siap agar lomba dapat berjalan lancar</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-time">09.00 - 11.00</span>
+                    <div class="timeline-content">
+                        <h3>Pelaksanaan Acara</h3>
+                        <p>Lomba Pembuatan Cup Cake dari Olahan Kopi: Peserta menunjukkan kreativitas dalam mengolah kopi menjadi kue yang menarik dan enak</p>
+                        <p>Lomba Poster: Peserta membuat poster yang bertema “PARIWISATA DI BELITUNG” secara langsung di tempat</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-time">11.00 - 11.30</span>
+                    <div class="timeline-content">
+                        <h3>School Tour</h3>
+                        <p>Sesi jalan-jalan mengelilingi area sekolah untuk mengenalkan fasilitas dan lingkungan sekolah kepada para peserta dan tamu undangan</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-time">11.30 - 12.30</span>
+                    <div class="timeline-content">
+                        <h3>Ishoma</h3>
+                        <p>Waktu istirahat, sholat, dan makan siang. Peserta dan tamu undangan diarahkan ke tempat makan yang telah disediakan panitia.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-time">12.30 - 13.00</span>
+                    <div class="timeline-content">
+                        <h3>Penutupan dan Penyerahan Hadiah</h3>
+                        <p>Pengumuman pemenang dan penyerahan sertifikat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="daftar" class="registration">
+        <div class="container">
+            <h2 class="section-title">Formulir Pendaftaran</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="sekolah">Nama Sekolah</label>
+                    <input type="text" id="sekolah" name="sekolah" required>
+                </div>
+                <div class="form-group">
+                    <label for="kelas">Kelas</label>
+                    <select id="kelas" name="kelas" required>
+                        <option value="">Pilih Kelas</option>
+                        <option value="8">Kelas 8</option>
+                        <option value="9">Kelas 9</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telp">Nomor Telepon/WhatsApp</label>
+                    <input type="tel" id="telp" name="telp" required>
+                </div>
+                <div class="form-group">
+                    <label for="alasan">Alasan Mengikuti Event Ini</label>
+                    <textarea id="alasan" name="alasan" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pengalaman">Pengalaman Memasak/Presentasi (Jika Ada)</label>
+                    <textarea id="pengalaman" name="pengalaman"></textarea>
+                </div>
+                <button type="submit" class="btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kopi Sentasi - Event Kreatif Belitung 12 ULW 1 SPARTA</p>
+            <p>Untuk informasi lebih lanjut, hubungi: 081959041976</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Ambil nilai dari form
+            const nama = document.getElementById('nama').value;
+            const sekolah = document.getElementById('sekolah').value;
+            const kelas = document.getElementById('kelas').value;
+            const email = document.getElementById('email').value;
+            const telp = document.getElementById('telp').value;
+            const alasan = document.getElementById('alasan').value;
+            const pengalaman = document.getElementById('pengalaman').value;
+            
+            // Format pesan WhatsApp
+            const message = `Halo, saya ingin mendaftar event Kopi Sentasi.
+            
+Nama Lengkap: ${nama}
+Sekolah: ${sekolah}
+Kelas: ${kelas}
+Email: ${email}
+Nomor WhatsApp: ${telp}
+Alasan Mengikuti: ${alasan}
+Pengalaman: ${pengalaman || 'Tidak ada'}`;
+            
+            // Encode message untuk URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Nomor WhatsApp tujuan (format internasional)
+            const phoneNumber = '6281959041976';
+            
+            // Redirect ke WhatsApp
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+        });
+    </script>
+</body>
+</html>
